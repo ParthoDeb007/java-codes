@@ -1,10 +1,5 @@
 package StudentApp;
 import java.util.Scanner;
-
-import StudentApp.Student;
-import StudentApp.StudentAverage;
-import StudentApp.Student_Account;
-
 public class StudentMain {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -49,9 +44,8 @@ public class StudentMain {
 
                 } else if (choice == 2) {
                     if (student == null || account == null) {
-                        System.out.println("No account found. Please create an account first.");
-                        continue;
-                    }
+                        System.out.println("No account found. Please create an account first."); 
+                    }else{
                     System.out.print("Enter your email: ");
                     String email = sc.nextLine();
                     System.out.print("Enter your password: ");
@@ -63,6 +57,7 @@ public class StudentMain {
                     } else {
                         System.out.println("Invalid email or password.");
                     }
+                }
 
                 } else if (choice == 3) {
                     System.out.println("Exiting program...");
