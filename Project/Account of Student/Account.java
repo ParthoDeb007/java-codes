@@ -1,5 +1,4 @@
 package Project;
-
 public class Account {
 
     public String name;

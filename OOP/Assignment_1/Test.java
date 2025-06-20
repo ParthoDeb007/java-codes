@@ -1,4 +1,7 @@
 //4.4
+
+import StudentApp.Student;
+
 public class Test {
     public static void main(String[] args) {
         Student student1 = new Student("Jonh Blue", 85.5);
